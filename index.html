@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen active">
+    <h1>🃏 Memory Card Game</h1>
+    <p>Instructions:</p>
+    <ul>
+      <li>Flip two cards at a time.</li>
+      <li>If they match, they stay open.</li>
+      <li>Match all pairs within 60 seconds to win.</li>
+    </ul>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen">
+    <h2>Memory Challenge</h2>
+    <div class="status-bar">
+      <p>⏳ Time Left: <span id="timer">30</span>s</p>
+    </div>
+    <div class="game-container" id="game-board"></div>
+    <button id="restart-btn">Restart</button>
+    <p id="win-message"></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
